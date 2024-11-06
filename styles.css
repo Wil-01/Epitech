@@ -1,0 +1,670 @@
+
+.logo {
+    font-size: 2em; 
+    color: #ffaa00; 
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2039;
+    font-family: 'Manrope',sans-serif;
+    font-size: 1em;
+}
+
+
+
+#middle {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 20px 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.bg-highlight {
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right a {
+    margin-left: 15px;
+}
+
+.right img {
+    width: 32px;
+    height: 32px;
+}
+
+main {
+    scroll-margin-top: 92px;
+    overflow: clip;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 50px;
+}
+
+.Section{
+    border-right: 1px solid #1F2039;
+    border-bottom: 1px solid #1F2039;
+    padding: 50px;
+}
+
+.a_propos_contenu{
+    width: 80%;
+    margin: auto;
+}
+
+.a_propos_contenu > section > h1{
+    text-align: center;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffaa00;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* 
+.my-section {
+    padding: 20px; 
+
+} */
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.row {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container p{
+    color: #f7f3f3;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #A5B4FC;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+i {
+    font-size: 32px;
+}
+
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* main {
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+
+.services-section {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 80px;
+    text-align: center;
+}
+.service-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.service-icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.service-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+.service-card:hover .service-icon {
+    color: #1F2039;
+}
+.service-card:hover .service-title {
+    color: #007bff;
+}
+.service-description {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.dex-image-section {
+    text-align: center;
+}
+
+.dex-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.dex-image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dex-image-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.dex-image-item:hover img {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.dex-image-item:hover .overlay {
+    opacity: 1; /* Affiche le lien au survol */
+}
+
+.pricing-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+.pricing-section p {
+    color: white;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #007bff;
+}
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.pricing-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+.pricing-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.pricing-item h3 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+.pricing-item p {
+    margin: 10px 0;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+h1 {
+    font-size: 3.5em;
+    font-family: 'Montserrat' ,sans-serif;
+    color: #A5B4FC;
+}
+
+.porto{
+    background-color: white;
+    height: auto;
+}
+.portfolio-section1{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 20px;
+}
+.portfolio-section2{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+}
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+}
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+.portfolio-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.portfolio-description {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.filter-btn {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.portfolio-section1, .portfolio-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: calc(33.333% - 20px);
+    display: none; 
+}
+
+.portfolio-item.active {
+    display: block;
+}
+
+.pbody {
+    display: flex; 
+    flex-direction:column; 
+    min-height: 100vh; 
+    height:auto;
+}
+
+.mbody {
+    flex: 1;
+}
+
+.portfolio-carousel {
+
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.project-image {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-info {
+    width: 50%;
+    padding: 20px;
+    background-color: #1F2039;
+    border-radius: 8px;
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #A5B4FC;
+}
+
+.project-info p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.project-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Base styles, as you provided above */
+
+/* Media query for larger screens (desktops) */
+@media (min-width: 1200px) {
+    .container, .navbar, .services-section, .portfolio-section1, .portfolio-section2 {
+        max-width: 1200px;
+    }
+}
+
+/* Media query for medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .services-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-section1, .portfolio-section2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .project-image, .project-info {
+        width: 100%;
+    }
+}
+
+/* Media query for small screens (mobiles) */
+@media (max-width: 767px) {
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .service-card, .portfolio-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pricing-table {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-section1, .portfolio-section2 {
+        grid-template-columns: 1fr;
+    }
+
+    .text-container, .image-container {
+        min-width: 100%;
+    }
+
+    .project-image, .project-info {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
+
+/* Custom adjustments for very small screens (extra-small devices) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .service-icon, .service-title, .project-info h3 {
+        font-size: 1em;
+    }
+
+    .filter-btn {
+        font-size: 0.8em;
+        padding: 8px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
