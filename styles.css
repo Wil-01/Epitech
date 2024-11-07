@@ -1,10 +1,10 @@
-
+/* 
 .logo {
     font-size: 2em; 
     color: #ffaa00; 
     display: inline-block; 
     margin-right: 10px; 
-}
+} */
 
 html, body {
     width: 100%;
@@ -103,23 +103,8 @@ html, body {
     color: #007bff;
 }
 
-.right {
-    display: flex;
-    align-items: center;
-}
-
-.right a {
-    margin-left: 15px;
-}
-
-.right img {
-    width: 32px;
-    height: 32px;
-}
-
 main {
     scroll-margin-top: 92px;
-    overflow: clip;
 }
 
 footer {
@@ -151,10 +136,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #ffaa00;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -162,11 +143,11 @@ img {
 }
 
 
-/* 
-.my-section {
-    padding: 20px; 
 
-} */
+.my-section {
+    margin: 20px; 
+
+}
 
 .container {
     max-width: 1200px; 
@@ -186,6 +167,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .text-container p{
@@ -219,11 +201,6 @@ h3 {
     color: #333;
     font-weight: 600;
 }
-
-/* main {
-    margin-left: 20px;
-    margin-right: 20px;
-} */
 
 .services-section {
     max-width: 1200px;
@@ -272,7 +249,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
     gap: 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 20px;
 }
 
 .dex-image-item {
@@ -535,24 +512,130 @@ a:hover {
     text-decoration: underline;
 }
 
+#contact {
+    padding: 60px 20px;
+    margin: 20px;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.contact-info div {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+.contact-form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 100%;
 
+}
+.contact-form form {
+    margin-right: 20px;
+}
+.btn-send {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-send:hover {
+    background-color: #0056b3;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+input[type="text"], input[type="email"] {
+    grid-column: span 1;
+}
+textarea {
+    grid-column: span 2;
+    resize: vertical;
+}
+.contact-form h4 {
+    grid-column: span 2;
+    margin-top: 0;
+    text-align: center;
+}
+.contt {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 15px;
+}
 
+.map {
+    flex: 1; 
+    min-width: 300px; 
+}
 
-/* Base styles, as you provided above */
+.fom {
+    flex: 1; 
+    min-width: 300px; 
+}
 
-/* Media query for larger screens (desktops) */
+#scrollTopBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: -15px;
+    z-index: 99999;
+    background-color: #0066cc;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    align-items: center;
+}
+
+.scroll-top i {
+    font-size: 24px;
+    color: white;
+    line-height: 0;
+}
+
+.scroll-top:hover {
+    background-color: #255f98;
+    color: white;
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+}
+
 @media (min-width: 1200px) {
-    .container, .navbar, .services-section, .portfolio-section1, .portfolio-section2 {
+    .container, .navbar, .portfolio-section1, .portfolio-section2 {
         max-width: 1200px;
     }
 }
 
-/* Media query for medium screens (tablets) */
 @media (min-width: 768px) and (max-width: 1199px) {
-    .services-section {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .portfolio-section1, .portfolio-section2 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -563,7 +646,6 @@ a:hover {
     }
 }
 
-/* Media query for small screens (mobiles) */
 @media (max-width: 767px) {
     .logo {
         font-size: 1.5em;
@@ -609,7 +691,6 @@ a:hover {
     }
 }
 
-/* Custom adjustments for very small screens (extra-small devices) */
 @media (max-width: 480px) {
     .logo {
         font-size: 1.2em;
@@ -629,42 +710,112 @@ a:hover {
     }
 }
 
+@media (max-width: 991px) {
+    .services-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-title {
+        font-size: 1.3rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-section {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 10px;
+    }
+
+    .service-title {
+        font-size: 1.2rem;
+    }
+
+    .service-description {
+        font-size: 0.8rem;
+    }
+}
 
 
+@media (min-width: 992px) {
+    .contt {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .map, .fom {
+        flex: 1;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact-info div, .contact-form {
+        flex: 1;
+        max-width: 48%;
+    }
 
+    .contact-info {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
 
+@media (max-width: 767px) {            
+    .contt {
+        flex-direction: column;
+    }
 
+    .map, .fom {
+        min-width: 100%;
+    }
 
+    .contact-form h4 {
+        font-size: 1.5em;
+    }
 
+    input, textarea {
+        width: 100%;
+    }
 
+    .btn-send {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+    }
+}
 
+@media (max-width: 480px) {
+    .contact-info div h5, .contact-info div p {
+        font-size: 0.9em;
+    }
 
+    .contact-form h4 {
+        font-size: 1.3em;
+    }
 
+    input, textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .btn-send {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
 

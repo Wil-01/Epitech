@@ -8,169 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-
     <!--Manrope police-->
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
-    <style>
-
-        #contact {
-            padding: 60px 20px;
-            margin: 20px;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .contact-info div {
-            flex: 1;
-            margin: 10px;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: center;
-        }
-        .contact-form {
-            background: white;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            max-width: 100%;
-
-        }
-        .contact-form form {
-            margin-right: 20px;
-        }
-        .btn-send {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .btn-send:hover {
-            background-color: #0056b3;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        input[type="text"], input[type="email"] {
-            grid-column: span 1;
-        }
-        textarea {
-            grid-column: span 2;
-            resize: vertical;
-        }
-        .contact-form h4 {
-            grid-column: span 2;
-            margin-top: 0;
-            text-align: center;
-        }
-        .contt {
-            display: flex; 
-            justify-content: space-between; 
-            gap: 15px;
-        }
-        
-        .map {
-            flex: 1; 
-            min-width: 300px; 
-        }
-        
-        .fom {
-            flex: 1; 
-            min-width: 300px; 
-        }
-        @media (min-width: 992px) {
-            .contt {
-                display: flex;
-                gap: 15px;
-            }
-            
-            .map, .fom {
-                flex: 1;
-            }
-        }
-        
-        /* Media query for medium screens (tablets) */
-        @media (min-width: 768px) and (max-width: 991px) {
-            .contact-info div, .contact-form {
-                flex: 1;
-                max-width: 48%;
-            }
-        
-            .contact-info {
-                flex-wrap: wrap;
-                gap: 20px;
-            }
-        }
-        
-        /* Media query for small screens (mobiles) */
-        @media (max-width: 767px) {            
-            .contt {
-                flex-direction: column;
-            }
-        
-            .map, .fom {
-                min-width: 100%;
-            }
-        
-            .contact-form h4 {
-                font-size: 1.5em;
-            }
-        
-            input, textarea {
-                width: 100%;
-            }
-        
-            .btn-send {
-                width: 100%;
-                padding: 12px;
-                font-size: 1em;
-            }
-        }
-        
-        /* Media query for extra-small screens (very small devices) */
-        @media (max-width: 480px) {
-            .contact-info div h5, .contact-info div p {
-                font-size: 0.9em;
-            }
-        
-            .contact-form h4 {
-                font-size: 1.3em;
-            }
-        
-            input, textarea {
-                font-size: 0.9em;
-                padding: 8px;
-            }
-        
-            .btn-send {
-                padding: 10px;
-                font-size: 0.9em;
-            }
-        }
-        @media (max-width: 768px) {
-            .contact-info {
-                flex-direction: column;
-            }
-        }
-    </style>
     <link href="styles.css" rel="stylesheet">  
 
 </head>
@@ -195,37 +38,33 @@
     <section id="contact">
         <div class="contact-info">
             <div>
-                <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h5><i class="fas fa-map-marker-alt"></i> Adresse</h5>
+                <p>123 Rue de Vitry, Vitry-sur-Seine, France</p>
             </div>
             <div>
-                <h5><i class="fas fa-phone"></i> Call Us</h5>
-                <p>+1 5589 55488 55</p>
+                <h5><i class="fas fa-phone"></i>Téléphone</h5>
+                <p>+33 1 23 45 67 89</p>
             </div>
             <div>
-                <h5><i class="fas fa-envelope"></i> Email Us</h5>
+                <h5><i class="fas fa-envelope"></i> Email</h5>
                 <p>info@example.com</p>
             </div>
         </div>
-    
+        
         <div class="contact-form">
-            <h4>Contact Us</h4>
+            <h4>Contactez-nous</h4>
             <div class="contt">
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.123456789012!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1c1c1c1c1c%3A0x1c1c1c1c1c1c1c1c!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus" 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.123456789012!2d2.4000!3d48.8000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4e1c1c1c1c1c1c%3A0x1c1c1c1c1c1c1c1c!2sVitry-sur-Seine!5e0!3m2!1sen!2sfr!4v1616161616161!5m2!1sen!2sfr" 
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="fom">
                     <form>
-                        <input type="text" id="name" placeholder="Your Name" required>
-            
-                        <input type="email" id="email" placeholder="Your Email" required>
-            
-                        <input type="text" id="subject" placeholder="Subject" required>
-            
+                        <input type="text" id="name" placeholder="Votre Nom" required>
+                        <input type="email" id="email" placeholder="Votre Email" required>
+                        <input type="text" id="subject" placeholder="Sujet" required>
                         <textarea id="message" rows="4" placeholder="Message" required></textarea>
-            
-                        <button type="submit" class="btn-send">Send Message</button>
+                        <button type="submit" class="btn-send">Envoyer le Message</button>
                     </form>
                 </div>
             </div>
@@ -233,9 +72,10 @@
     </section>
     
     </main>
-
+    <div class="scroll-top" id="scrollTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
     <footer>
-        <!-- <img src="img/logo.png" alt="Logo Robbie Lens"> -->
         <a class="navbar-brand" href="index.html">
             <span class="bg-highlight">Wil</span>.DEV
         </a>
@@ -244,6 +84,6 @@
         <a href="https://www.instagram.com/" target="_blank" class="lien"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-
+<script src="behavior.js"></script>
 </body>
 </html>

@@ -1,11 +1,15 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-    var thumbnailElement = document.getElementById("smart_thumbnail");
+const scrollTopBtn = document.getElementById('scrollTopBtn');
 
-    thumbnailElement.addEventListener("click", function() {
-        if (thumbnailElement.className == "small") {
-            thumbnailElement.className = "";
-        } else {
-            thumbnailElement.className = "small";
-        }
-    });
-});
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.classList.add('active');
+    } else {
+        scrollTopBtn.classList.remove('active');
+    }
+};
+
+scrollTopBtn.onclick = function() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0;
+};
+
